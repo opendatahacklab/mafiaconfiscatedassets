@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY odhl "http://opendatahacklab.org/ontology/" >
+    <!ENTITY odhl_site_root "http://opendatahacklab.github.io/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY org "http://www.w3.org/ns/org#" >
+    <!ENTITY dcat "http://www.w3.org/ns/dcat#" >
+	<!ENTITY ca "http://opendatahacklab.org/confiscatedassets/" >
+]>
+
+
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:dcat="&dcat;"
+     xmlns:ca="&ca;">
+    <owl:Ontology rdf:about="&odhl_site_root;mafiaconfiscatedassets">
+        <owl:versionIRI rdf:resource="&odhl_site_root;mafiaconfiscatedassets/0.1"/>
+		<owl:versionInfo>0.1</owl:versionInfo>
+        <dc:creator rdf:resource="&odhl;people/cristianolongo"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/org"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <owl:imports rdf:resourcs="&odhl_site_root;mafiaconfiscatedassets/confiscatedassets_vocab.owl" />
+    </owl:Ontology>
+	
+    <ca:ConfiscatedAssetsDataset rdf:about="http://www.comune.palermo.it/buildings">
+		<dcterms:title>Comune di Palermo - ANAGRAFE DEGLI EDIFICI PUBBLICI</dcterms:title>
+		<rdfs:label>Comune di Palermo - ANAGRAFE DEGLI EDIFICI PUBBLICI</rdfs:label>
+		<dcterms:description>
+		Anagrafe edifici pubblici e ad uso pubblico (dati relativi agli edifici pubblici 
+		con relativa destinazione e modalit&agrave; d’uso nonch&eacute; informazioni sugli edifici 
+		privati destinati ad uso pubblico).
+		</dcterms:description>
+		<dcat:landingPage rdf:resource="http://www.comune.palermo.it/opendata_dld.php?id=319" />
+		<dcterms:publisher>
+			<org:FormalOrganization rdf:about="http://www.comune.palermo.it/me">
+				<rdfs:label>Comune di Palermo</rdfs:label>
+				<foaf:name>Comune di Palermo</foaf:name>
+				<foaf:homepage rdf:resource="http://www.comune.palermo.it" />
+			</org:FormalOrganization>		
+		</dcterms:publisher>
+		<dcat:distribution>
+			<dcat:Distribution rdf:about="http://www.comune.palermo.it/buildings/distr">
+				<dcterms:title>Comune di Palermo - ANAGRAFE DEGLI EDIFICI PUBBLICI (CSV)</dcterms:title>
+				<rdfs:label>Comune di Palermo - ANAGRAFE DEGLI EDIFICI PUBBLICI (CSV)</rdfs:label>
+				<dcat:downloadURL rdfs:label="http://www.comune.palermo.it/js/server/uploads/opendata/_31122014122228.csv" />
+				<dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/" />
+				<dcat:mediaType>text/csv</dcat:mediaType>
+			</dcat:Distribution>
+		</dcat:distribution>		
+	</dcat:Dataset>
+
+    <!--
+    <dcat:Dataset rdf:about="&odhl;">
+		<dcterms:title>Datasets of Confiscated Assets</dcterms:title>
+		<rdfs:label>Datasets of Confiscated Assets</rdfs:label>
+		<dcterms:description>Some datasets where you can found information about confiscated assets.</dcterms:description>
+		<dcat:landingPage rdf:resource="&odhl_site_root;mafiaconfiscatedassets/data.html" />
+		<dcterms:publisher rdf:resource="http://opendatahacklab.org/me" />
+		<dcat:distribution>
+			<dcat:Distribution rdf:about="&odhl;datasetDistr/odhl_rdf">
+				<dcterms:title>opendatahacklab ontology as OWL file</dcterms:title>
+				<rdfs:label>opendatahacklab ontology as OWL file</rdfs:label>
+				<dcat:downloadURL rdfs:label="&odhl_site_root;odhl.owl" />
+				<dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/" />
+				<dcat:mediaType>applications/rdf+xml</dcat:mediaType>
+			</dcat:Distribution>
+			<dcat:Distribution rdf:about="&odhl;datasetDistr/odhl_sparql">
+				<dcterms:title>SPARQL endpoint for the opendatahacklab ontology</dcterms:title>
+				<rdfs:label>SPARQL endpoint for the opendatahacklab ontology</rdfs:label>
+				<dcat:accessURL rdfs:label="http://dydra.com/cristianolongo/odhl/sparql" />
+				<dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/" />
+				<dcat:mediaType>application/sparql-query</dcat:mediaType>
+			</dcat:Distribution>
+		</dcat:distribution>		
+	</dcat:Dataset>
+	-->
+</rdf:RDF>
+
