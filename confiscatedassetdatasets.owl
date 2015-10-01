@@ -59,7 +59,6 @@
 				<dcterms:title>Comune di Palermo - ANAGRAFE DEGLI EDIFICI PUBBLICI (CSV)</dcterms:title>
 				<rdfs:label>Comune di Palermo - ANAGRAFE DEGLI EDIFICI PUBBLICI (CSV)</rdfs:label>
 				<dcat:downloadURL rdfs:label="http://www.comune.palermo.it/js/server/uploads/opendata/_31122014122228.csv" />
-				<dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/" />
 				<dcat:mediaType>text/csv</dcat:mediaType>
 				<dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.it" />
 			</dcat:Distribution>

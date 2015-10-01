@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>opendatahacklab - Confiscated Assets</title>
+		<link rel="stylesheet" type="text/css" href="http://opendatahacklab.github.io/odhl.css" />
+		<script type="text/javascript" src="http://opendatahacklab.github.io/sparql_suite/sparql_processor.js"></script>
+		<script type="text/javascript" src="http://opendatahacklab.github.io/sparql_suite/dcat_sparql_processor.js"></script>
+</head>
+<body>
+	<header class="main-header">
+		<img class="logo" src="http://opendatahacklab.github.io//imgs/logo_cog4_ter.png" alt="the opendatahacklab logo" />
+		<h1>opendatahacklab - confiscated assets</h1>
+		<p class="subtitle">THE OPEN DATA HACKING LABORATORY - Powered by 
+			<a href="http://github.com"><img alt="GitHub" src="http://opendatahacklab.github.io/imgs/GitHub_Logo.png" /></a>
+			<a href="http://dydra.com"><img alt="dydra.com" src="http://opendatahacklab.github.io/imgs/dydra-logo-24pt.png" /></a>
+		</p>
+		<nav>
+			<ol class="breadcrumb">
+				<li><a href="http://opendatahacklab.github.io//index.html">home</a></li>
+				<li><a href="http://opendatahacklab.github.io//projects.html">projects</a></li>
+				<li>confiscatedassets</li>
+			</ol>
+			<a href="https://github.com/opendatahacklab/mafiaconfiscatedassets" alt="Source Code" title="GitHub repository"><img src="http://opendatahacklab.github.io/imgs/GitHub-Mark-64px.png" /></a>
+			<!-- a href="data.html"><img src="../imgs/rdf.png" /></a -->
+		</nav>
+	</header>
+	<section>
+		<header><h2>INTRODUCTION</h2></header>
+		<p>In this project we develop some tools and mantain knowledge bases 
+			related to confiscated assets. The goal is to build a huge knowledge
+			base of confiscated assets in Sicily: a generic vocabulary to
+			represent confiscated assets, an ontology of which public 
+			administrations provide enough information about confiscated assets it
+			owns, ontologies of these assets. We release the tools used to build
+			this knowledge base as well, in particular tools to convert assets 
+			information from its origin format (may be, for example, CSV) to the
+			uniform format we provide.</p>	
+	</section>
+
+	<!-- TODO contributors -->
+	
+	<section id="datasets">
+		<header><h2>DATASETS</h2></header>
+		<p>Here we report some datasets of confiscated assets 
+		released by municipalities. One dataset in the following list 
+		may be  confiscated-assets specific or may just contain 
+		description of confiscated assets among all the buildings and 
+		assets of the municipality.</p>		
+		
+		<p class="loading" id="loading">Loading ...</p>
+		<p class="top"><a href="#top">Torna Su</a></p>
+		<script type="text/javascript">
+var loadingItem = document.getElementById("loading");
+var container = document.getElementById("datasets");
+var processor = createDCAT2HTMLProcessor(container, loadingItem, null, null);
+sparql_query("http://dydra.com/cristianolongo/confiscated-assets-datasets/sparql", processor);
+		</script>		
+	</section>
+		
+	<section>
+		<header><h2>MAPS</h2></header>
+		<p>We converted some of dataset reported in Section 
+		<a href="#datasets">DATASETS</a> into a uniform notation based
+		on <a href="">semantic web</a> technologies, using the 
+		<a href="http://opendatahacklab.github.io/confiscatedassets/confiscatedassets_vocab.owl">confiscated
+		assets vocabolary</a>.</p> 
+		
+		<p>In particular, for some of the datasets released by
+		municipalities, a <em>wrapper</em> script has been provided. Such
+		a wrapper operates the convertion from the original format in which
+		the dataset is released into the one which uses our confiscated assets
+		vocabulary. Such a wrapper is expected to create the following files:</p>
+		<ul>
+			<li><code>assets.owl</code> which contains the descriptions of the 
+			confiscated assets in the source dataset;</li>
+			<li><code>locations.owl</code> in which asset locations are described
+			using the <a href="http://www.w3.org/ns/locn">location vocabulary</a>;
+			<li><code>geomerty.owl</code> which contains geospatial information
+			about this locations.</li>
+		</ul>
+		
+		<p>Note that coordinates reported in <code>geometry.owl</code> have
+		been obtained by the google geocoder. As consequence, this information
+		is not freely reusable, but it is subject to the conditions imposed by 
+		google.</p> 
+		
+		<p>For each municipality, the wrapper and the ontologies are available
+		in the <a href="https://github.com/opendatahacklab/mafiaconfiscatedassets">gitHub 
+		repository of this project</a>.</p>
+	</section>	
+</body>
+</html>
