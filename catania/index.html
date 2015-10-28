@@ -32,10 +32,9 @@
 	the <a href="http://www.comune.catania.it/amministrazione-trasparente/beni-immobili-e-gestione-del-patrimonio/patrimonio-immobiliare/elenco-beni-confiscati/">
 	Elenco Beni Confiscati</a> dataset released by the municipality of Catania. The file is in PDF format. Thus we had to
 	extract the table, converting them in CSV, by the extraction tool <a href="http://tabula.technology/">Tabula</a>.
-	</p>
-	<!--	
-	 in RDF by the <code>csv2locnCatania.php</code> script (see 
-	sources in the GitHub repository). A <a href="log.txt">log</a> file of the conversion process is available as well. 
+	Then, this file has been manually updated to solve some issues (for example, keep separate address and civic number).
+	Finally, it has been converted in RDF by the <code>csv2locnCatania.php</code> 
+	script and inferences have been performed using the reasoner Pellet.
 	The ontology is available as OWL downloadable files:</p>
 	<ul>
 		<li><a href="assets.owl"><code>assets.owl</code></a></li>
@@ -44,7 +43,7 @@
 	</ul>
 	
 	<p>In addition, it can be accessed via its own 
-	<a href="http://dydra.com/cristianolongo/beni-confiscati-palermo/sparql">SPARQL Endpoint</a>.</p>
+	<a href="http://dydra.com/cristianolongo/confiscated-assets-catania/sparql">SPARQL Endpoint</a>.</p>
 	
 	<p><em>USAGE NOTE</em>: coordinates reported in <code>geometry.owl</code> and accessible via
 	the SPARLQ Endpoint have been obtained by the google geocoder. As consequence, this information
@@ -64,7 +63,7 @@
 	var processor = new GoogleMapsLOCNProcessor(null, null, map);
 		
 	//finally run the query
-	sparql_query("http://dydra.com/cristianolongo/beni-confiscati-palermo/sparql", processor);
-	</script> -->
+	sparql_query("http://dydra.com/cristianolongo/confiscated-assets-catania/sparql", processor);
+	</script> 
 </body>
 </html>

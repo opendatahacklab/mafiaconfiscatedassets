@@ -5,8 +5,6 @@
  * Create an instance of ConfiscatedAssetsConverter and parse each asset one by one, after you have
  * sent on the three streams the ontologies preambles.
  * 
- * This software is release under the CC-BY 4.0 license (https://creativecommons.org/licenses/by/4.0/)
- *
  * @author Cristiano Longo
  */
 

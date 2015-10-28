@@ -18,5 +18,5 @@
     <owl:Ontology rdf:about="http://comune.catania.it/assets/">
     	<rdfs:label>Coordinates of confiscated assets in Catania</rdfs:label>
         <owl:imports rdf:resource="&geo;"/>
-        <owl:imports rdf:resource="http://opendatahacklab.github.io/confiscatedassets/confiscatedassets_vocab.owl" />
+        <owl:imports rdf:resource="http://opendatahacklab.github.io/mafiaconfiscatedassets/confiscatedassets_vocab.owl" />
     </owl:Ontology>
