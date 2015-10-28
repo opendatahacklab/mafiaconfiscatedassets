@@ -19,8 +19,6 @@
  *
  * @author Cristiano Longo
  * @author Mario Alvise Di Bernardo
- *
- * This software is release under the CC-BY 4.0 license (https://creativecommons.org/licenses/by/4.0/)
  */
 
 require("../ConfiscatedAssetsConverter.php");
