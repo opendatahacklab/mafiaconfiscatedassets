@@ -2,14 +2,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>opendatahacklab - Confiscated Assets</title>
-		<link rel="stylesheet" type="text/css" href="http://opendatahacklab.github.io/odhl.css" />
-		<script type="text/javascript" src="http://opendatahacklab.github.io/sparql_suite/sparql_processor.js"></script>
-		<script type="text/javascript" src="http://opendatahacklab.github.io/sparql_suite/dcat_sparql_processor.js"></script>
+		<title>opendatahacklab - confiscated assets</title>
+		<!-- link rel="stylesheet" type="text/css" href="http://opendatahacklab.github.io/odhl.css" /-->
+		<link rel="stylesheet" type="text/css" href="../opendatahacklab.github.io/odhl.css" />
 </head>
 <body>
 	<header class="main-header">
-		<img class="logo" src="http://opendatahacklab.github.io//imgs/logo_cog4_ter.png" alt="the opendatahacklab logo" />
+		<img class="logo" src="http://opendatahacklab.github.io/imgs/logo_cog4_ter.png" alt="the opendatahacklab logo" />
 		<h1>opendatahacklab - confiscated assets</h1>
 		<p class="subtitle">THE OPEN DATA HACKING LABORATORY - Powered by 
 			<a href="http://github.com"><img alt="GitHub" src="http://opendatahacklab.github.io/imgs/GitHub_Logo.png" /></a>
@@ -22,7 +21,7 @@
 				<li>confiscatedassets</li>
 			</ol>
 			<a href="https://github.com/opendatahacklab/mafiaconfiscatedassets" alt="Source Code" title="GitHub repository"><img src="http://opendatahacklab.github.io/imgs/GitHub-Mark-64px.png" /></a>
-			<!-- a href="data.html"><img src="../imgs/rdf.png" /></a -->
+			<a href="data.html"><img src="http://opendatahacklab.github.io/imgs/rdf.png" /></a -->
 		</nav>
 	</header>
 	<section>
@@ -35,59 +34,43 @@
 			owns, ontologies of these assets. We release the tools used to build
 			this knowledge base as well, in particular tools to convert assets 
 			information from its origin format (may be, for example, CSV) to the
-			uniform format we provide.</p>	
+			uniform format we provide.</p>			
 	</section>
 
 	<!-- TODO contributors -->
-	
-	<section id="datasets">
-		<header><h2>DATASETS</h2></header>
-		<p>Here we report some datasets of confiscated assets 
-		released by municipalities. One dataset in the following list 
-		may be  confiscated-assets specific or may just contain 
-		description of confiscated assets among all the buildings and 
-		assets of the municipality.</p>		
+	<section id="data">
+		<header><h2>DATA</h2></header>
+		<p>Some data are produced and distributed in the scope of this project.</p>
 		
-		<p class="loading" id="loading">Loading ...</p>
-		<p class="top"><a href="#top">Torna Su</a></p>
-		<script type="text/javascript">
-var loadingItem = document.getElementById("loading");
-var container = document.getElementById("datasets");
-var processor = createDCAT2HTMLProcessor(container, loadingItem, null, null);
-sparql_query("http://dydra.com/cristianolongo/confiscated-assets-datasets/sparql", processor);
-		</script>		
+		<p>An OWL vocabulary (<code><a href="confiscatedassets_vocab.owl">confiscatedassets_vocab.owl</a></code>)
+		to define classes and properties has been created and it is currently work in progress.</p>
+		
+		<p>An catalogue of datasets concerning confiscated assets is available as well.
+		These can be accessed as indicated in the <a href="data.html#datasets">open data page</a>
+		of this project. In addition, you can browse the catalogue by accessing the <a href="datasets.html">datasets page</a>.
+		</p>
 	</section>
-		
-	<!-- section>
-		<header><h2>MAPS</h2></header>
-		<p>We converted some of dataset reported in Section 
-		<a href="#datasets">DATASETS</a> into a uniform notation based
-		on <a href="">semantic web</a> technologies, using the 
-		<a href="http://opendatahacklab.github.io/confiscatedassets/confiscatedassets_vocab.owl">confiscated
-		assets vocabolary</a>.</p> 
+			
+	<section>
+		<header><h2>ONTOLOGIES and Maps</h2></header>
+		<p>Aside the, some of these datasets listed in the <a href="confiscatedassetdatasets.owl">confiscated assets 
+		datasets ontology</a> have been converted into a uniform notation based
+		on <a href="http://www.w3.org/2001/sw/">semantic web</a> technologies, using the 
+		<a href="confiscatedassets_vocab.owl">confiscated assets vocabolary</a>.</p> 
 		
 		<p>In particular, for some of the datasets released by
 		municipalities, a <em>wrapper</em> script has been provided. Such
 		a wrapper operates the convertion from the original format in which
 		the dataset is released into the one which uses our confiscated assets
-		vocabulary. Such a wrapper is expected to create the following files:</p>
-		<ul>
-			<li><code>assets.owl</code> which contains the descriptions of the 
-			confiscated assets in the source dataset;</li>
-			<li><code>locations.owl</code> in which asset locations are described
-			using the <a href="http://www.w3.org/ns/locn">location vocabulary</a>;
-			<li><code>geomerty.owl</code> which contains geospatial information
-			about this locations.</li>
-		</ul>
+		vocabulary.</p> 
 		
-		<p>Note that coordinates reported in <code>geometry.owl</code> have
-		been obtained by the google geocoder. As consequence, this information
-		is not freely reusable, but it is subject to the conditions imposed by 
-		google.</p> 
-		
-		<p>For each municipality, the wrapper and the ontologies are available
-		in the <a href="https://github.com/opendatahacklab/mafiaconfiscatedassets">gitHub 
-		repository of this project</a>.</p>
-	</section -->	
+		<p>For each municipality, all the related stuffs are available in 
+		the  <a href="https://github.com/opendatahacklab/mafiaconfiscatedassets">gitHub 
+		repository of this project</a> in a directory named with the municipality name.
+		In addition, instruction for online access to the produced ontologies are 
+		provided in the <a href="data.html#ontologies">ontologies section</a> of the
+		open data page.
+		</p> 		
+	</section>	
 </body>
 </html>
