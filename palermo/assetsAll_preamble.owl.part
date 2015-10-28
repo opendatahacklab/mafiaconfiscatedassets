@@ -25,5 +25,5 @@
     	<rdfs:label>Confiscated assets in Palermo</rdfs:label>
         <owl:imports rdf:resource="http://www.w3.org/ns/locn"/>
         <owl:imports rdf:resource="&geo;"/>
-        <owl:imports rdf:resource="http://opendatahacklab.github.io/confiscatedassets/confiscatedassets_vocab.owl" />
+        <owl:imports rdf:resource="http://opendatahacklab.github.io/mafiaconfiscatedassets/confiscatedassets_vocab.owl" />
     </owl:Ontology>
