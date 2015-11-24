@@ -34,7 +34,6 @@
         <owl:imports rdf:resource="http://www.w3.org/ns/org"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <owl:imports rdf:resource="&odhl_site_root;confiscatedassets/confiscatedassets_vocab.owl" />
-        <owl:imports rdf:resource="http://www.w3.org/ns/org" />
     </owl:Ontology>
 			
     <ca:ConfiscatedAssetsDataset rdf:about="http://www.comune.palermo.it/buildings">
