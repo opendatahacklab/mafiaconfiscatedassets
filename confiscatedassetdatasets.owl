@@ -2,6 +2,7 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY odhl "http://opendatahacklab.org/ontology/" >
     <!ENTITY odhl_site_root "http://opendatahacklab.github.io/" >
+    <!ENTITY odhl_projects_root "http://opendatahacklab.org/" >
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
@@ -33,7 +34,7 @@
         <dc:creator rdf:resource="&odhl;people/cristianolongo"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/org"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <owl:imports rdf:resource="&odhl_site_root;confiscatedassets/confiscatedassets_vocab.owl" />
+        <owl:imports rdf:resource="&odhl_projects_root;confiscatedassets/confiscatedassets_vocab.owl" />
     </owl:Ontology>
 			
     <ca:ConfiscatedAssetsDataset rdf:about="http://www.comune.palermo.it/buildings">
@@ -99,13 +100,13 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		<dcterms:title>Datasets of Confiscated Assets</dcterms:title>
 		<rdfs:label>Datasets of Confiscated Assets</rdfs:label>
 		<dcterms:description>Some datasets where you can found information about confiscated assets.</dcterms:description>
-		<dcat:landingPage rdf:resource="&odhl_site_root;mafiaconfiscatedassets/data.html" />
+		<dcat:landingPage rdf:resource="&odhl_projects_root;mafiaconfiscatedassets/data.html" />
 		<dcterms:publisher rdf:resource="http://opendatahacklab.org/me" />
 		<dcat:distribution>
 			<dcat:Distribution rdf:about="&odhl;datasetDistr/odhl_rdf">
 				<dcterms:title>opendatahacklab ontology as OWL file</dcterms:title>
 				<rdfs:label>opendatahacklab ontology as OWL file</rdfs:label>
-				<dcat:downloadURL rdfs:label="&odhl_site_root;odhl.owl" />
+				<dcat:downloadURL rdfs:label="&odhl_projects_root;odhl.owl" />
 				<dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/" />
 				<dcat:mediaType>applications/rdf+xml</dcat:mediaType>
 			</dcat:Distribution>
