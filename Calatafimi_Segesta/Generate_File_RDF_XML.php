@@ -25,10 +25,21 @@ class Generate_File_RDF_XML{
 		$location=new AddressRDFConverter($Indirizzo,"", $municipality, $countryCode);
 		$locationUri = $location->id;
 		//************************************************************* write the Asset
-		$this->writeToAssets("<ca:ConfiscatedAsset rdf:about=\"$i\">\n");
-		$this->writeToAssets("\t<rdfs:label>$Descrizione</rdfs:label>\n");
-		$this->writeToAssets("\t<locn:location rdf:resource=\"$locationUri\" />\n");
-		$this->writeToAssets("</ca:ConfiscatedAsset>\n");
+		if(strcmp($Assegnato,"Si"))
+		{
+			$this->writeToAssets("<ca:UnassignedConfiscatedAsset rdf:about=\"$i\">\n");
+			$this->writeToAssets("\t<rdfs:label>$Descrizione</rdfs:label>\n");
+			$this->writeToAssets("\t<locn:location rdf:resource=\"$locationUri\" />\n");
+			$this->writeToAssets("</ca:UnassignedConfiscatedAsset>\n");
+		}
+		else
+		{
+			$this->writeToAssets("<ca:AssignedConfiscatedAsset rdf:about=\"$i\">\n");
+			$this->writeToAssets("\t<rdfs:label>$Descrizione</rdfs:label>\n");
+			$this->writeToAssets("\t<locn:location rdf:resource=\"$locationUri\" />\n");
+			$this->writeToAssets("</ca:AssignedConfiscatedAsset>\n");
+		}
+		
 		//put an asset in a location, check whether the location already exists in the ontologies,
 		//create it if not.
 		if (array_key_exists($locationUri, $this->locations))
