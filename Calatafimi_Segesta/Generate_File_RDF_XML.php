@@ -56,8 +56,8 @@ class Generate_File_RDF_XML{
 		$this->writeToLocations("\t<locn:geometry rdf:resource=\"$pointUri\" />\n");
 		$this->writeToLocations("</locn:Location>\n");
 		//************************************************************* End write the Locations
-		//*************************************************************  Write the Geopoints
-			$this->writeToCoordinates("<geo:Point rdf:about=\"$locationUri\">\n");
+		//*************************************************************  Write the Geopoints //$locationUri
+			$this->writeToCoordinates("<geo:Point rdf:about=\"$pointUri\">\n");
 			$this->writeToCoordinates("\t<geo:lat>$latitude</geo:lat>\n");
 		  	$this->writeToCoordinates("\t<geo:long>$longitude</geo:long>\n");
 			$this->writeToCoordinates("</geo:Point>\n");
