@@ -38,9 +38,11 @@ class Generate_File_RDF_XML{
 		//************************************************************* write the Locations
 		$this->writeToLocations("<locn:Location rdf:about=\"$locationUri\">\n");
 		//at first the address
+		$pointUri=$locationUri.'_geometry';
 		$this->writeToLocations("\t<locn:address>\n");
 		$this->writeToLocations($location->getLOCNAddress($locationUri.'_address'));
 		$this->writeToLocations("\t</locn:address>\n");
+		$this->writeToLocations("\t<locn:geometry rdf:resource=\"$pointUri\" />\n");
 		$this->writeToLocations("</locn:Location>\n");
 		//************************************************************* End write the Locations
 		//*************************************************************  Write the Geopoints
