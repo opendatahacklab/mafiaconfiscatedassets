@@ -11,7 +11,7 @@
 	<!ENTITY ca "http://opendatahacklab.org/confiscatedassets/" >
 ]>
 
-<rdf:RDF xml:base="http://comune.catania.it/assets/"
+<rdf:RDF xml:base="http://www.comune.calatafimisegesta.tp.it/assets/"
 	 xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -21,7 +21,7 @@
      xmlns:locn="&locn;"
      xmlns:geo="&geo;"
      xmlns:ca="&ca;">
-    <owl:Ontology rdf:about="http://comune.catania.it/assets/">
+    <owl:Ontology rdf:about="http://www.comune.calatafimisegesta.tp.it/assets/">
     	<rdfs:label>Confiscated assets in Catania</rdfs:label>
         <owl:imports rdf:resource="http://www.w3.org/ns/locn"/>
         <owl:imports rdf:resource="&geo;"/>

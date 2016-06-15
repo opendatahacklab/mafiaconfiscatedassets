@@ -8,14 +8,14 @@
     <!ENTITY geo "http://www.w3.org/2003/01/geo/wgs84_pos#" >
 ]>
 
-<rdf:RDF xml:base="http://comune.Calatafimi-Segesta.it/assets/"
+<rdf:RDF xml:base="http://www.comune.calatafimisegesta.tp.it/assets/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:geo="&geo;"
      xmlns:ca="&ca;">
-    <owl:Ontology rdf:about="http://comune.Calatafimi-Segesta.it/assets/">
+    <owl:Ontology rdf:about="http://www.comune.calatafimisegesta.tp.it/assets/">
     	<rdfs:label>Coordinates of confiscated assets in Calatafimi-Segesta</rdfs:label>
         <owl:imports rdf:resource="&geo;"/>
         <owl:imports rdf:resource="http://opendatahacklab.github.io/mafiaconfiscatedassets/confiscatedassets_vocab.owl" />
