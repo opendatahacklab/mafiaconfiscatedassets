@@ -57,12 +57,25 @@ class Generate_File_RDF_XML{
 		$this->writeToLocations("</locn:Location>\n");
 		//************************************************************* End write the Locations
 		//*************************************************************  Write the Geopoints //$locationUri
+		$latitude=$this->changeDot($latitude);
+		$longitude=$this->changeDot($longitude);
 			$this->writeToCoordinates("<geo:Point rdf:about=\"$pointUri\">\n");
 			$this->writeToCoordinates("\t<geo:lat>$latitude</geo:lat>\n");
 		  	$this->writeToCoordinates("\t<geo:long>$longitude</geo:long>\n");
 			$this->writeToCoordinates("</geo:Point>\n");
 		//*************************************************************  End Write the Geopoints
 
+	}
+	/**
+	 * Change the formatting of longitude and latitude changing the comma with the point
+	 * 
+	 * @param String $str
+	 */
+	private function changeDot($change_string)
+	{
+		$array=explode(',',$change_string);
+		$change_string_dot=$array[0].".".$array[1];
+		return $change_string_dot;
 	}
 	/**
 	 * Write a string to the assets handle
