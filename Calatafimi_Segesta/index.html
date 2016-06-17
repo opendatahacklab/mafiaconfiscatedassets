@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>opendatahacklab - confiscated assets - Partanna</title>
+		<title>opendatahacklab - confiscated assets - Calatafimi-Segesta</title>
 		<link rel="stylesheet" type="text/css" href="commons/css/odhl.css" />
 		<script type="text/javascript" src="sparql_suite/sparql_processor.js"></script>
 		<script type="text/javascript" src="sparql_suite/locn_sparql_processor.js"></script>
@@ -11,7 +11,7 @@
 <body>
 	<header class="main-header">
 		<img class="logo" src="commons/imgs/logo_cog4_ter.png" alt="the opendatahacklab logo" />
-		<h1>opendatahacklab - confiscated assets - Partanna</h1>
+		<h1>opendatahacklab - confiscated assets - Calatafimi-Segesta</h1>
 		<p class="subtitle">THE OPEN DATA HACKING LABORATORY - Powered by 
 			<a href="http://dydra.com"><img alt="dydra.com" src="commons/imgs/dydra-logo-24pt.png" /></a>
 			<a class="wt-tech" target="_blank" href="http://wt-tech.it">WT-TECH</a>
@@ -21,7 +21,7 @@
 				<li><a href="http://opendatahacklab.org/site/index.html">home</a></li>
 				<li><a href="http://opendatahacklab.org/site/projects.html">projects</a></li>
 				<li><a href="../index.html">confiscatedassets</a></li>
-				<li>Partanna</li>
+				<li>Calatafimi-Segesta</li>
 			</ol>
 			<a href="https://github.com/opendatahacklab/mafiaconfiscatedassets" alt="Source Code" title="GitHub repository">
 				<img src="commons/imgs/GitHub-Mark-64px.png" /></a>
@@ -29,9 +29,9 @@
 		</nav>
 	</header>
 	
-	<p>The <em>ontology of confiscated assets in Partanna</em> has been produced from 
+	<p>The <em>ontology of confiscated assets in Calatafimi-Segesta</em> has been produced from 
 	the <a href="http://www.comune.catania.it/amministrazione-trasparente/beni-immobili-e-gestione-del-patrimonio/patrimonio-immobiliare/elenco-beni-confiscati/">
-	Elenco Beni Confiscati</a> dataset released by the municipality of Partanna. The file is in PDF format. Thus we had to extract the table, converting them in CSV, by the extraction tool <a href="http://tabula.technology/">Tabula</a>.
+	Elenco Beni Confiscati</a> dataset released by the municipality of Calatafimi-Segesta. The file is in PDF format. Thus we had to extract the table, converting them in CSV, by the extraction tool <a href="http://tabula.technology/">Tabula</a>.
 	Then, this file has been manually updated to solve some issues (for example, keep separate address and civic number).
 	Finally, it has been converted in RDF by the <code>Generate_File_RDF_XML.php</code> 
 	script and inferences have been performed using the reasoner Pellet.
@@ -43,7 +43,7 @@
 	</ul>
 	
 	<p>In addition, it can be accessed via its own 
-	<a href="http://dydra.com/cristianolongo/confiscated-assets-partanna/sparql">SPARQL Endpoint</a>.</p>
+	<a href="http://dydra.com/cristianolongo/confiscated-assets-segesta-calatafimi/sparql">SPARQL Endpoint</a>.</p>
 	
 	<p><em>USAGE NOTE</em>: coordinates reported in <code>geometry.owl</code> and accessible via
 	the SPARLQ Endpoint have been obtained by the google geocoder. As consequence, this information
@@ -56,14 +56,14 @@
 	var canvas=document.getElementById("map");
 	var map=  new google.maps.Map(canvas, {
 		zoom: 11,
-		center: new google.maps.LatLng(37.7262527,12.879747)
+		center: new google.maps.LatLng(37.9169651,12.7792451)
 	});
 	
 	//create the processor instance
 	var processor = new GoogleMapsLOCNProcessor(null, null, map);
 		
 	//finally run the query fa comparire i tags 
-	sparql_query("http://dydra.com/cristianolongo/confiscated-assets-partanna/sparql", processor);
+	sparql_query("http://dydra.com/cristianolongo/confiscated-assets-segesta-calatafimi/sparql", processor);
 	</script> 
 </body>
 </html>
