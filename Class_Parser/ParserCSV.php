@@ -69,25 +69,26 @@ class ParserCSV
 	}
 	public function Stampa()
 	{
-		$num1 = count($this->Arguments_Confiscated);
-	    for ($i = 1; $i <= $num1-1; $i++)
-	    {
-		    print("Bene N°".$i. "<br />\n");
-		    print("Latitudine : ");
-        	print($this->Arguments_Confiscated[$i]) -> getLatitude(). "<br />\n";
-        	print("Longitudine : ");
-		    print($this->Arguments_Confiscated[$i]) -> getLongitude(). "<br />\n";
-		    print("ID_Bene : ");
-		    print($this->Arguments_Confiscated[$i]) -> getID_Bene(). "<br />\n";
-		    print("Indirizzo : ");
-		    print($this->Arguments_Confiscated[$i]) -> getIndirizzo(). "<br />\n";
-		    print("Assegnato : ");
-		    print($this->Arguments_Confiscated[$i]) -> getAssegnato(). "<br />\n";
-		    print("Descrizione : ");
-		    print($this->Arguments_Confiscated[$i]) -> getDescrizione(). "<br />\n";
-		    print("<br />\n");
-		    print($this->Arguments_Confiscated[$i]) -> getName_file_csv(). "<br />\n";
-		}
+		echo ciao;
+// 		$num1 = count($this->Arguments_Confiscated);
+// 	    for ($i = 1; $i <= $num1-1; $i++)
+// 	    {
+// 		    print("Bene N°".$i. "<br />\n");
+// 		    print("Latitudine : ");
+//         	print(($this->Arguments_Confiscated[$i]) -> getLatitude(). "<br />\n");
+//         	print("Longitudine : ");
+// 		    print($this->Arguments_Confiscated[$i]) -> getLongitude(). "<br />\n";
+// 		    print("ID_Bene : ");
+// 		    print($this->Arguments_Confiscated[$i]) -> getID_Bene(). "<br />\n";
+// 		    print("Indirizzo : ");
+// 		    print($this->Arguments_Confiscated[$i]) -> getIndirizzo(). "<br />\n";
+// 		    print("Assegnato : ");
+// 		    print($this->Arguments_Confiscated[$i]) -> getAssegnato(). "<br />\n";
+// 		    print("Descrizione : ");
+// 		    print($this->Arguments_Confiscated[$i]) -> getDescrizione(). "<br />\n";
+// 		    print("<br />\n");
+// 		    print($this->Arguments_Confiscated[$i]) -> getName_file_csv(). "<br />\n";
+// 		}
 	}
 }
 ?>
