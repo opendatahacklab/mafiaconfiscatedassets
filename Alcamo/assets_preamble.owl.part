@@ -20,7 +20,7 @@
      xmlns:locn="&locn;"
      xmlns:ca="&ca;">
     <owl:Ontology rdf:about="http://www.comune.alcamo.tp.it/assets/">
-    	<rdfs:label>Confiscated assets in Calatafimi-Segesta</rdfs:label>
+    	<rdfs:label>Confiscated assets in Alcamo</rdfs:label>
         <owl:imports rdf:resource="http://www.w3.org/ns/locn"/>
         <owl:imports rdf:resource="http://opendatahacklab.github.io/mafiaconfiscatedassets/confiscatedassets_vocab.owl" />
     </owl:Ontology>
