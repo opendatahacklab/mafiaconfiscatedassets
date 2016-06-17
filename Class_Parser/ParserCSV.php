@@ -50,6 +50,7 @@ class ParserCSV
 	    	$new_Descrizione=$this->Arguments_Confiscated[$i] -> getDescrizione();	//Descrizione
 	    	$name_city=$this->Arguments_Confiscated[$i] -> getName_file_csv();
 	    	$countryCode='IT';
+	    	// write contents file assets.owl, locations.owl,geometry.owl, assetsAll.owl
 	    	$converter->convert($i, $new_Latitudine,$new_Longitudine, $new_ID_Bene,$new_Indirizzo,$new_Assegnato,$new_Descrizione,$name_city,$countryCode);
 
 	    }
@@ -69,7 +70,7 @@ class ParserCSV
 	public function Stampa()
 	{
 		$num1 = count($this->Arguments_Confiscated);
-	    for ($i = 0; $i <= $num1-1; $i++)
+	    for ($i = 1; $i <= $num1-1; $i++)
 	    {
 		    print("Bene N°".$i. "<br />\n");
 		    print("Latitudine : ");

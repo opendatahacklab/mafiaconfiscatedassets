@@ -22,7 +22,7 @@
      xmlns:geo="&geo;"
      xmlns:ca="&ca;">
     <owl:Ontology rdf:about="http://www.comune.calatafimisegesta.tp.it/assets/">
-    	<rdfs:label>Confiscated assets in Catania</rdfs:label>
+    	<rdfs:label>Confiscated assets in Calatafimi-Segesta</rdfs:label>
         <owl:imports rdf:resource="http://www.w3.org/ns/locn"/>
         <owl:imports rdf:resource="&geo;"/>
         <owl:imports rdf:resource="http://opendatahacklab.github.io/mafiaconfiscatedassets/confiscatedassets_vocab.owl" />
