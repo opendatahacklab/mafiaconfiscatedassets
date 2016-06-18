@@ -67,12 +67,12 @@ class Parser_Object_confiscated
     }
     public function setDescrizione($Descrizione) 
 	{
-       $this->Descrizione=$Descrizione;
+       $this->Descrizione=utf8_encode($Descrizione);
        return $this;
     }
     public function setIndirizzo($Indirizzo) 
 	{
-       $this->Indirizzo=$Indirizzo;
+       $this->Indirizzo=utf8_encode($Indirizzo);
        return $this;
     }
     public function setName_file_csv($Name_file_csv) 
