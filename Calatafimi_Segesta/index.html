@@ -3,17 +3,17 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>opendatahacklab - confiscated assets - Calatafimi-Segesta</title>
-		<link rel="stylesheet" type="text/css" href="commons/css/odhl.css" />
-		<script type="text/javascript" src="sparql_suite/sparql_processor.js"></script>
-		<script type="text/javascript" src="sparql_suite/locn_sparql_processor.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../commons/css/odhl.css" />
+		<script type="text/javascript" src="http://opendatahacklab.org/sparql_suite/sparql_processor.js"></script>
+		<script type="text/javascript" src="http://opendatahacklab.org/sparql_suite/locn_sparql_processor.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>		
 </head>
 <body>
 	<header class="main-header">
-		<img class="logo" src="commons/imgs/logo_cog4_ter.png" alt="the opendatahacklab logo" />
+		<img class="logo" src="../../commons/imgs/logo_cog4_ter.png" alt="the opendatahacklab logo" />
 		<h1>opendatahacklab - confiscated assets - Calatafimi-Segesta</h1>
 		<p class="subtitle">THE OPEN DATA HACKING LABORATORY - Powered by 
-			<a href="http://dydra.com"><img alt="dydra.com" src="commons/imgs/dydra-logo-24pt.png" /></a>
+			<a href="http://dydra.com"><img alt="dydra.com" src="../../commons/imgs/dydra-logo-24pt.png" /></a>
 			<a class="wt-tech" target="_blank" href="http://wt-tech.it">WT-TECH</a>
 		</p>
 		<nav>
@@ -24,17 +24,20 @@
 				<li>Calatafimi-Segesta</li>
 			</ol>
 			<a href="https://github.com/opendatahacklab/mafiaconfiscatedassets" alt="Source Code" title="GitHub repository">
-				<img src="commons/imgs/GitHub-Mark-64px.png" /></a>
-			<a href="data.html"><img src="commons/imgs/rdf.png" /></a>
+				<img src="../../commons/imgs/GitHub-Mark-64px.png" /></a>
+			<a href="data.html"><img src="../../commons/imgs/rdf.png" /></a>
 		</nav>
 	</header>
 	
-	<p>The <em>ontology of confiscated assets in Calatafimi-Segesta</em> has been produced from 
-	the <a href="http://www.comune.catania.it/amministrazione-trasparente/beni-immobili-e-gestione-del-patrimonio/patrimonio-immobiliare/elenco-beni-confiscati/">
-	Elenco Beni Confiscati</a> dataset released by the municipality of Calatafimi-Segesta. The file is in PDF format. Thus we had to extract the table, converting them in CSV, by the extraction tool <a href="http://tabula.technology/">Tabula</a>.
-	Then, this file has been manually updated to solve some issues (for example, keep separate address and civic number).
-	Finally, it has been converted in RDF by the <code>Generate_File_RDF_XML.php</code> 
-	script and inferences have been performed using the reasoner Pellet.
+	<p>The <em>ontology of confiscated assets in Calatafimi and Segesta</em> has been produced from 
+	the <a href="https://goo.gl/msYPa0">
+	Elenco Beni Confiscati</a> dataset produced in the scope of the project 
+	<em><a href="http://www.opendatahacklab.org/site/events/29Dic2015/libera2015.pdf">Servizi di 
+	assistenza tecnica alle amministrazioni pubbliche volti ad incrementare la cultura della 
+	responsabilit&agrave; sociale, la trasparenza dell’azione amministrativa, la partecipazione 
+	dei cittadini e l’informazione volti a prevenire infiltrazioni della criminalit&agrave; nella 
+	Pubblica Amministrazione e negli appalti pubblici</a></em>. This dataset has been converted in 
+	RDF by the <code>Generate_File_RDF_XML.php</code>  script and inferences have been performed using the reasoner Pellet.
 	The ontology is available as OWL downloadable files:</p>
 	<ul>
 		<li><a href="assets.owl"><code>assets.owl</code></a></li>
@@ -44,11 +47,7 @@
 	
 	<p>In addition, it can be accessed via its own 
 	<a href="http://dydra.com/cristianolongo/confiscated-assets-segesta-calatafimi/sparql">SPARQL Endpoint</a>.</p>
-	
-	<p><em>USAGE NOTE</em>: coordinates reported in <code>geometry.owl</code> and accessible via
-	the SPARLQ Endpoint have been obtained by the google geocoder. As consequence, this information
-	is not freely reusable, but it is subject to the conditions imposed by google.</p> 
-	
+		
 	<div id="map" class="map" />
 	
 	<script>
