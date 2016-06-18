@@ -47,7 +47,7 @@
 	<geo:long>12.840136</geo:long>
 </geo:Point>
 <ca:UnassignedConfiscatedAsset rdf:about="2">
-	<rdfs:label>ÊFabbricato rurale</rdfs:label>
+	<rdfs:label>Fabbricato rurale</rdfs:label>
 	<locn:location rdf:resource="c.da_staglio__partanna_it" />
 </ca:UnassignedConfiscatedAsset>
 <locn:Location rdf:about="c.da_staglio__partanna_it">

@@ -175,6 +175,26 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 			</dcat:Distribution>
 		</dcat:distribution>		
 	</ca:ConfiscatedAssetsDataset>
+
+    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/1On1Aw">
+		<dcterms:title>Elenco dei Beni Confiscati del Comune di Partanna</dcterms:title>
+		<rdfs:label>Elenco dei Beni Confiscati del Comune di Partanna</rdfs:label>
+		<dcterms:description>
+			Elenco dei Beni Confiscati del Comune di Partanna realizzato nell'ambito del
+			progetto  Servizi di assistenza tecnica alle amministrazioni pubbliche volti ad incrementare la cultura della responsabilità sociale, la trasparenza dell’azione amministrativa, la partecipazione dei cittadini e l’informazione volti a prevenire infiltrazioni della criminalità nella Pubblica Amministrazione e negli appalti pubblici
+			(PO FESR 2007/2013 - Asse VII - l.i. 7.2.1.B)
+		</dcterms:description>
+		<dcterms:modified type="xsd:date">2015-10-01</dcterms:modified>
+		<dcterms:publisher rdf:resource="http://www.libera.it/me" />
+		<dcat:distribution>
+			<dcat:Distribution rdf:about="https://goo.gl/1On1Aw/distr">
+				<dcterms:title>Elenco dei Beni Confiscati del Comune di Partanna (CSV)</dcterms:title>
+				<rdfs:label>Elenco dei Beni Confiscati del Comune di Partanna (CSV)</rdfs:label>
+				<dcat:downloadURL rdfs:label="https://docs.google.com/spreadsheets/d/15q31lfGcA9aQP66ZWO8vrYcDKzlttLGlsFCVo6dqMuY/export?exportFormat=csv" />
+				<dcat:mediaType>text/csv</dcat:mediaType>
+			</dcat:Distribution>
+		</dcat:distribution>		
+	</ca:ConfiscatedAssetsDataset>
 	
     <!--
     <dcat:Dataset rdf:about="&odhl;">
