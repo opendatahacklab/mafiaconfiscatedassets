@@ -47,7 +47,7 @@
 	<geo:long>12.828586</geo:long>
 </geo:Point>
 <ca:UnassignedConfiscatedAsset rdf:about="2">
-	<rdfs:label>Fabbricato a più elevazioni fuori terra</rdfs:label>
+	<rdfs:label>Fabbricato a pi√π elevazioni fuori terra</rdfs:label>
 	<locn:location rdf:resource="via_adamo_n._25__vita_it" />
 </ca:UnassignedConfiscatedAsset>
 <locn:Location rdf:about="via_adamo_n._25__vita_it">
