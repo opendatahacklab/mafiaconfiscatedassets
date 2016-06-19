@@ -53,8 +53,8 @@
 <locn:Location rdf:about="c.da_latomie_%D0_pireto__castelvetrano_it">
 	<locn:address>
 		<locn:Address rdf:about="c.da_latomie_%D0_pireto__castelvetrano_it_address">
-			<rdfs:label>C.da Latomie Ğ Pireto,  Castelvetrano, IT</rdfs:label>
-			<locn:fullAddress>C.da Latomie Ğ Pireto,  Castelvetrano, IT</locn:fullAddress>
+			<rdfs:label>C.da Latomie - Pireto,  Castelvetrano, IT</rdfs:label>
+			<locn:fullAddress>C.da Latomie - Pireto,  Castelvetrano, IT</locn:fullAddress>
 			<locn:postName>Castelvetrano</locn:postName>
 			<locn:adminUnitL1>IT</locn:adminUnitL1>
 		</locn:Address>
@@ -148,8 +148,8 @@
 <locn:Location rdf:about="via_fr%88_serafino_mannone_n._124__castelvetrano_it">
 	<locn:address>
 		<locn:Address rdf:about="via_fr%88_serafino_mannone_n._124__castelvetrano_it_address">
-			<rdfs:label>Via Frˆ Serafino Mannone n. 124,  Castelvetrano, IT</rdfs:label>
-			<locn:fullAddress>Via Frˆ Serafino Mannone n. 124,  Castelvetrano, IT</locn:fullAddress>
+			<rdfs:label>Via Frï¿½ Serafino Mannone n. 124,  Castelvetrano, IT</rdfs:label>
+			<locn:fullAddress>Via Frï¿½ Serafino Mannone n. 124,  Castelvetrano, IT</locn:fullAddress>
 			<locn:postName>Castelvetrano</locn:postName>
 			<locn:adminUnitL1>IT</locn:adminUnitL1>
 		</locn:Address>
@@ -186,8 +186,8 @@
 <locn:Location rdf:about="c.da_triscina_%D0__manicalunga%2C_via__49_n._50-52__castelvetrano_it">
 	<locn:address>
 		<locn:Address rdf:about="c.da_triscina_%D0__manicalunga%2C_via__49_n._50-52__castelvetrano_it_address">
-			<rdfs:label>C.da Triscina Ğ  Manicalunga, Via  49 n. 50-52,  Castelvetrano, IT</rdfs:label>
-			<locn:fullAddress>C.da Triscina Ğ  Manicalunga, Via  49 n. 50-52,  Castelvetrano, IT</locn:fullAddress>
+			<rdfs:label>C.da Triscina ï¿½  Manicalunga, Via  49 n. 50-52,  Castelvetrano, IT</rdfs:label>
+			<locn:fullAddress>C.da Triscina ï¿½  Manicalunga, Via  49 n. 50-52,  Castelvetrano, IT</locn:fullAddress>
 			<locn:postName>Castelvetrano</locn:postName>
 			<locn:adminUnitL1>IT</locn:adminUnitL1>
 		</locn:Address>
@@ -199,7 +199,7 @@
 	<geo:long>12.7988</geo:long>
 </geo:Point>
 <ca:UnassignedConfiscatedAsset rdf:about="10">
-	<rdfs:label>Terreno con annessi due fabbricati rurali sito in c/da Canalotto,gravato da una  servit in favore della SNAM  per attraversamento metanodotto</rdfs:label>
+	<rdfs:label>Terreno con annessi due fabbricati rurali sito in c/da Canalotto,gravato da una  servitï¿½ in favore della SNAM  per attraversamento metanodotto</rdfs:label>
 	<locn:location rdf:resource="c.da_canalotto__castelvetrano_it" />
 </ca:UnassignedConfiscatedAsset>
 <locn:Location rdf:about="c.da_canalotto__castelvetrano_it">
