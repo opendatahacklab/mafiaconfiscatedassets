@@ -34,7 +34,7 @@
         <dc:creator rdf:resource="&odhl;people/cristianolongo"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/org"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <owl:imports rdf:resource="&odhl_projects_root;confiscatedassets/confiscatedassets_vocab.owl" />
+        <owl:imports rdf:resource="http://opendatahacklab.org/mafiaconfiscatedassets/confiscatedassets_vocab.owl" />
     </owl:Ontology>
 			
     <ca:ConfiscatedAssetsDataset rdf:about="http://www.comune.palermo.it/buildings">
@@ -90,7 +90,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcat:distribution>		
 	</ca:ConfiscatedAssetsDataset>
 
-    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/jKjDhm">
+    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/jKjDhm/me">
 		<dcterms:title>Elenco dei Beni Confiscati del Comune di Alcamo</dcterms:title>
 		<rdfs:label>Elenco dei Beni Confiscati del Comune di Alcamo</rdfs:label>
 		<dcterms:description>
@@ -99,6 +99,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 			(PO FESR 2007/2013 - Asse VII - l.i. 7.2.1.B)
 		</dcterms:description>
 		<dcterms:modified type="xsd:date">2015-10-01</dcterms:modified>
+		<dcat:landingPage rdf:resource="https://goo.gl/jKjDhm" />
 		<dcterms:publisher>
 			<org:Organization rdf:about="http://www.libera.it/me">
 				<rdfs:label>Libera, associazioni nomi e numeri contro le mafie</rdfs:label>
@@ -116,7 +117,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcat:distribution>		
 	</ca:ConfiscatedAssetsDataset>
 
-    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/msYPa0">
+    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/msYPa0/me">
 		<dcterms:title>Elenco dei Beni Confiscati del Comune di Calatafimi-Segesta</dcterms:title>
 		<rdfs:label>Elenco dei Beni Confiscati del Comune di Calatafimi-Segesta</rdfs:label>
 		<dcterms:description>
@@ -126,6 +127,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcterms:description>
 		<dcterms:modified type="xsd:date">2015-10-01</dcterms:modified>
 		<dcterms:publisher rdf:resource="http://www.libera.it/me" />
+		<dcat:landingPage rdf:resource="https://goo.gl/msYPa0" />
 		<dcat:distribution>
 			<dcat:Distribution rdf:about="https://goo.gl/msYPa0">
 				<dcterms:title>Elenco dei Beni Confiscati del Comune di Calatafimi-Segesta (CSV)</dcterms:title>
@@ -136,7 +138,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcat:distribution>		
 	</ca:ConfiscatedAssetsDataset>
 
-    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/4zVr8a">
+    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/4zVr8a/me">
 		<dcterms:title>Elenco dei Beni Confiscati del Comune di Vita</dcterms:title>
 		<rdfs:label>Elenco dei Beni Confiscati del Comune di Vita</rdfs:label>
 		<dcterms:description>
@@ -146,6 +148,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcterms:description>
 		<dcterms:modified type="xsd:date">2015-10-01</dcterms:modified>
 		<dcterms:publisher rdf:resource="http://www.libera.it/me" />
+		<dcat:landingPage rdf:resource="https://goo.gl/4zVr8a" />
 		<dcat:distribution>
 			<dcat:Distribution rdf:about="https://goo.gl/4zVr8a/distr">
 				<dcterms:title>Elenco dei Beni Confiscati del Comune di Vita (CSV)</dcterms:title>
@@ -156,7 +159,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcat:distribution>		
 	</ca:ConfiscatedAssetsDataset>
 
-    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/F8JNhK">
+    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/F8JNhK/me">
 		<dcterms:title>Elenco dei Beni Confiscati del Comune di Salemi</dcterms:title>
 		<rdfs:label>Elenco dei Beni Confiscati del Comune di Salemi</rdfs:label>
 		<dcterms:description>
@@ -166,6 +169,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcterms:description>
 		<dcterms:modified type="xsd:date">2015-10-01</dcterms:modified>
 		<dcterms:publisher rdf:resource="http://www.libera.it/me" />
+		<dcat:landingPage rdf:resource="https://goo.gl/F8JNhK" />
 		<dcat:distribution>
 			<dcat:Distribution rdf:about="https://goo.gl/F8JNhK/distr">
 				<dcterms:title>Elenco dei Beni Confiscati del Comune di Salemi (CSV)</dcterms:title>
@@ -176,7 +180,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcat:distribution>		
 	</ca:ConfiscatedAssetsDataset>
 
-    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/1On1Aw">
+    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/1On1Aw/me">
 		<dcterms:title>Elenco dei Beni Confiscati del Comune di Partanna</dcterms:title>
 		<rdfs:label>Elenco dei Beni Confiscati del Comune di Partanna</rdfs:label>
 		<dcterms:description>
@@ -186,6 +190,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcterms:description>
 		<dcterms:modified type="xsd:date">2015-10-01</dcterms:modified>
 		<dcterms:publisher rdf:resource="http://www.libera.it/me" />
+		<dcat:landingPage rdf:resource="https://goo.gl/1On1Aw" />
 		<dcat:distribution>
 			<dcat:Distribution rdf:about="https://goo.gl/1On1Aw/distr">
 				<dcterms:title>Elenco dei Beni Confiscati del Comune di Partanna (CSV)</dcterms:title>
@@ -196,7 +201,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcat:distribution>		
 	</ca:ConfiscatedAssetsDataset>
 
-    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/HgcHTj">
+    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/HgcHTj/me">
 		<dcterms:title>Elenco dei Beni Confiscati del Comune di Castelvetrano</dcterms:title>
 		<rdfs:label>Elenco dei Beni Confiscati del Comune di Castelvetrano</rdfs:label>
 		<dcterms:description>
@@ -206,6 +211,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcterms:description>
 		<dcterms:modified type="xsd:date">2015-10-01</dcterms:modified>
 		<dcterms:publisher rdf:resource="http://www.libera.it/me" />
+		<dcat:landingPage rdf:resource="https://goo.gl/HgcHTj" />
 		<dcat:distribution>
 			<dcat:Distribution rdf:about="https://goo.gl/HgcHTj/distr">
 				<dcterms:title>Elenco dei Beni Confiscati del Comune di Castelvetrano (CSV)</dcterms:title>
@@ -216,7 +222,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcat:distribution>		
 	</ca:ConfiscatedAssetsDataset>
 
-    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/VJWBsb">
+    <ca:ConfiscatedAssetsDataset rdf:about="https://goo.gl/VJWBsb/me">
 		<dcterms:title>Elenco dei Beni Confiscati del Comune di Campobello di Mazzara</dcterms:title>
 		<rdfs:label>Elenco dei Beni Confiscati del Comune di Campobello di Mazzara</rdfs:label>
 		<dcterms:description>
@@ -226,6 +232,7 @@ Legge 190 del 6/11/2012, Art. 1 c. 32 “Disposizioni per la prevenzione e la re
 		</dcterms:description>
 		<dcterms:modified type="xsd:date">2015-10-01</dcterms:modified>
 		<dcterms:publisher rdf:resource="http://www.libera.it/me" />
+		<dcat:landingPage rdf:resource="https://goo.gl/VJWBsb" />
 		<dcat:distribution>
 			<dcat:Distribution rdf:about="https://goo.gl/VJWBsb/distr">
 				<dcterms:title>Elenco dei Beni Confiscati del Comune di Campobello di Mazzara (CSV)</dcterms:title>
